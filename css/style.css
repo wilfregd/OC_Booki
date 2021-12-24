@@ -1,0 +1,572 @@
+/*        -------------------       */
+/*        ------- Init ------       */
+/*        -------------------       */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 3%;
+  min-width: 450px;
+}
+
+/*        -------------------       */
+/*        ----- Desktop -----       */
+/*        -------------------       */
+
+@media screen and (min-width: 992px) {
+  /* ----- Header ----- */
+  header {
+    padding: 0;
+    margin: 0;
+    height: 120px;
+    display: flex;
+    align-content: stretch;
+  }
+
+  .header_logo {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_logo img {
+    width: 110px;
+  }
+
+  #header_menu {
+    margin-left: auto;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .header_link {
+    text-decoration: none;
+    width: 400px;
+    padding: 30px;
+    font-size: 19px;
+    border-top: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+  }
+
+  .header_link:hover {
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
+  }
+
+  /* -- Search bar -- */
+
+  /* Texte */
+
+  .barre_recherches {
+    font-weight: 100;
+  }
+
+  .barre_recherches p {
+    margin: 5px;
+  }
+
+  .barre_recherches p:first-child {
+    font-weight: 700;
+    font-size: 23px;
+  }
+
+  .barre_recherches p:last-child {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  /* Form */
+
+  .barre_recherches-form {
+    width: 44%;
+    margin-top: 20px;
+    display: flex;
+    height: 55px;
+  }
+
+  .barre_recherches-form input[type="text"] {
+    border: none;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    width: 280px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .barre_recherches-form button[type="submit"] {
+    font-size: 19px;
+    font-weight: 700;
+    background-color: #0065fc;
+    color: #fff;
+    border: none;
+    width: 150px;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .barre_recherches-form button[type="submit"]:hover {
+    cursor: pointer;
+  }
+
+  .barre_recherches-form button[type="submit"] img {
+    display: none;
+    width: 0px;
+  }
+
+  .barre_recherches-form button[type="submit"] h4 {
+    display: inline;
+  }
+
+  .barre_recherches-img_container {
+    background-color: #eee;
+    padding: 10px;
+    width: 60px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .barre_recherches-form img {
+    width: 15px;
+  }
+
+  /* Filtres */
+
+  .filtres {
+    margin-top: 40px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+
+  .filtres h4 {
+    margin: 0 30px 0 0;
+    font-size: 21px;
+    font-weight: 700px;
+  }
+
+  /* Filter boxes */
+  .filtre_box {
+    height: 55px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filtre_image {
+    width: 55px;
+    height: 55px;
+    background-color: #deebff;
+    border-radius: 50px;
+    z-index: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .filtre_image img {
+    padding: 15px;
+  }
+
+  .filtre_texte {
+    margin: auto;
+    height: 55px;
+    margin-left: -25px;
+    padding-left: 35px;
+    border: 2px solid #ddd;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Info text */
+  .info-text {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 600px;
+  }
+
+  .info-text p {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  .info-image {
+    border: 1px solid #deebff;
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .info-image img {
+    width: 5px;
+  }
+
+  /* --- Main Boxes --- */
+  .main-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .container-box {
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 500px;
+  }
+
+  .container-box h4 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .container-box h5 {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .container-box a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #box-hebergements {
+    width: 70%;
+  }
+
+  #box-populaire {
+    width: 27%;
+  }
+
+  .container-subbox {
+    padding: 5px;
+    margin: 20px 5px;
+    width: 280px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #0002;
+  }
+
+  .box-pop {
+    width: 100%;
+    height: 130px;
+  }
+
+  /* Activités à Marseille */
+
+  .activites {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 400px;
+    align-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  #activites-title {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  .activite-container {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .container_double {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .activite-box {
+    border-radius: 20px;
+    width: 275px;
+    box-shadow: 0px 0px 8px #0003;
+    padding: 0 25px;
+    font-size: 17px;
+  }
+
+  .container_double .activite-box {
+    height: 40%;
+  }
+
+  .activite-img {
+    height: 85%;
+  }
+
+  /* Footer */
+  footer {
+    height: 210px;
+    background-color: #f2f2f2;
+    display: flex;
+    padding: 20px 100px;
+    margin: 0 -4%;
+  }
+
+  .footer-section {
+    width: 33%;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .footer-section li {
+    margin: 10px 0;
+  }
+
+  .footer-section a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+/*        -------------------       */
+/*        ----- Mobile -----        */
+/*        -------------------       */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* ----- Header ----- */
+  header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_logo {
+    align-self: center;
+    justify-content: center;
+    padding: 25px;
+  }
+
+  .header_logo img {
+    width: 150px;
+    content: url("../images/Booki@3x.png");
+  }
+
+  #header_menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_link {
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 19px;
+    border-top: none;
+    padding: 15px;
+    color: black;
+    border-bottom: 3px solid #eee;
+  }
+
+  .header_link:hover {
+    border-bottom: 3px solid #0065fc;
+    color: #0065fc;
+  }
+
+  /* Search bar */
+  .barre_recherches {
+    margin-top: 25px;
+    font-weight: 100;
+  }
+
+  .barre_recherches p {
+    margin: 10px;
+  }
+
+  .barre_recherches p:first-child {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .barre_recherches p:last-child {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  /* Form */
+
+  .barre_recherches-form {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    height: 65px;
+  }
+
+  .barre_recherches-form input[type="text"] {
+    border: none;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    width: 280px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-grow: 2;
+  }
+
+  .barre_recherches-form button[type="submit"] {
+    font-size: 19px;
+    font-weight: 700;
+    background-color: #0065fc;
+    color: #fff;
+    border: none;
+    width: 65px;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .barre_recherches-form button[type="submit"] img {
+    display: inline;
+    width: 22.5px;
+  }
+
+  .barre_recherches-form button[type="submit"] h4 {
+    display: none;
+  }
+
+  .barre_recherches-form button[type="submit"]:hover {
+    cursor: pointer;
+  }
+
+  .barre_recherches-img_container {
+    background-color: #eee;
+    padding: 10px;
+    width: 65px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .barre_recherches-form img {
+    width: 20px;
+  }
+
+  /* Filtres */
+
+  .filtres {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+
+  .filtres h4 {
+    width: 100%;
+    margin: 0 30px 20px 0;
+    font-size: 23px;
+    font-weight: 700px;
+  }
+
+  /* Filter boxes */
+  .filtre_box {
+    height: 55px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filtre_image {
+    width: 55px;
+    height: 55px;
+    background-color: #deebff;
+    border-radius: 50px;
+    z-index: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .filtre_image img {
+    padding: 15px;
+  }
+
+  .filtre_texte {
+    margin: auto;
+    height: 55px;
+    margin-left: -30px;
+    padding-left: 40px;
+    border: 2px solid #ddd;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .filtre_texte h4 {
+    padding: 0;
+    margin-right: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+  }
+
+  /* Info text */
+  .info-text {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .info-text p {
+    margin-left: 10px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .info-image {
+    border: 1px solid #deebff;
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .info-image img {
+    width: 5px;
+  }
+}
