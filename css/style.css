@@ -163,7 +163,7 @@ body {
   .filtres h4 {
     margin: 0 30px 0 0;
     font-size: 15px;
-    font-weight: 700px;
+    font-weight: 700;
   }
 
   /* Filter boxes */
@@ -618,7 +618,7 @@ body {
   .filtres h4 {
     margin: 0 15px 0 0;
     font-size: 13px;
-    font-weight: 700px;
+    font-weight: 700;
   }
 
   /* Filter boxes */
@@ -996,7 +996,7 @@ body {
   }
 
   .barre_recherches-form button[type="submit"] {
-    font-size: 19px;
+    font-size: 0;
     font-weight: 700;
     background-color: #0065fc;
     color: #fff;
@@ -1011,10 +1011,6 @@ body {
   .barre_recherches-form button[type="submit"] img {
     display: inline;
     width: 22.5px;
-  }
-
-  .barre_recherches-form button[type="submit"] h4 {
-    display: none;
   }
 
   .barre_recherches-form button[type="submit"]:hover {
@@ -1050,7 +1046,7 @@ body {
     width: 100%;
     margin: 0 30px 20px 0;
     font-size: 18px;
-    font-weight: 700px;
+    font-weight: 700;
   }
 
   /* Filter boxes */
