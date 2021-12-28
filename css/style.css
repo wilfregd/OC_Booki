@@ -567,7 +567,7 @@ body {
   }
 
   .barre_recherches-form button[type="submit"] {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     background-color: #0065fc;
     color: #fff;
@@ -600,11 +600,11 @@ body {
   }
 
   .barre_recherches-form img {
-    width: 24px;
+    width: 26px;
   }
 
   .barre_recherches-img_container img {
-    padding: 3px;
+    padding: 5px;
   }
 
   /* Filtres */
