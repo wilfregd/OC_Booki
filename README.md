@@ -4,4 +4,4 @@ Projet 2 - OpenClassrooms : "Transformez une maquette en site web avec HTML & CS
 
 ---------------------
 <h4> Preview du site: </h4>
-<a href="https://wilfregd.github.io/OpenClassrooms-P2/"></a>
+<a href="https://wilfregd.github.io/OpenClassrooms-P2">Aperçu</a>
